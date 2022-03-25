@@ -1,8 +1,8 @@
 <?php
 
-namespace Ares\Core\Command\Adapters\Css;
+namespace Cosmic\Core\Command\Adapters\Css;
 
-use Ares\Core\Command\Adapters\AdapterInterface;
+use Cosmic\Core\Command\Adapters\AdapterInterface;
 
 class MinifyAdapter implements AdapterInterface
 {

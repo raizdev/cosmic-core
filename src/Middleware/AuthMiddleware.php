@@ -1,14 +1,8 @@
 <?php
-/**
- * @copyright Copyright (c) Ares (https://www.ares.to)
- *
- * @see LICENSE (MIT)
- */
-
-namespace Ares\Core\Middleware;
+namespace Cosmic\Core\Middleware;
 
 use Ares\Framework\Exception\NoSuchEntityException;
-use Ares\Core\Exception\CoreException;
+use Cosmic\Core\Exception\CoreException;
 use Ares\User\Repository\UserRepository;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
@@ -19,7 +13,7 @@ use SlimSession\Helper as SessionHelper;
 /**
  * Class RolePermissionMiddleware
  *
- * @package Ares\Core\Middleware
+ * @package Cosmic\Core\Middleware
  */
 class AuthMiddleware implements MiddlewareInterface
 {

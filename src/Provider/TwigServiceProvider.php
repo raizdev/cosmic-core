@@ -1,11 +1,5 @@
 <?php
-/**
- * @copyright Copyright (c) Ares (https://www.ares.to)
- *
- * @see LICENSE (MIT)
- */
-
-namespace Ares\Core\Provider;
+namespace Cosmic\Core\Provider;
 
 use League\Container\ServiceProvider\AbstractServiceProvider;
 use Slim\App;
@@ -19,7 +13,7 @@ use PHLAK\Config\Config;
 /**
  * Class TwigServiceProvider
  *
- * @package Ares\Core\Provider
+ * @package Cosmic\Core\Provider
  */
 class TwigServiceProvider extends AbstractServiceProvider
 {

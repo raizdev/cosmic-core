@@ -1,10 +1,11 @@
 <?php
 
-namespace Ares\Core\Command;
+namespace Cosmic\Core\Command;
 
 use Exception;
-use Ares\Core\Command\Config\Minifier as Config;
-use Ares\Core\Command\Exceptions\MinifierException;
+
+use Cosmic\Core\Command\Config\Minifier as Config;
+use Cosmic\Core\Command\Exceptions\MinifierException;
 
 class Minifier
 {

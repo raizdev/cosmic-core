@@ -1,6 +1,6 @@
 <?php
 
-namespace Ares\Core\Command\Adapters;
+namespace Cosmic\Core\Command\Adapters;
 
 interface AdapterInterface
 {

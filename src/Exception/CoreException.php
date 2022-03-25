@@ -1,13 +1,7 @@
 <?php
-/**
- * @copyright Copyright (c) Ares (https://www.ares.to)
- *
- * @see LICENSE (MIT)
- */
+namespace Cosmic\Core\Exception;
 
-namespace Ares\Core\Exception;
-
-use Ares\Framework\Exception\BaseException;
+use Cosmic\Framework\Exception\BaseException;
 
 /**
  * Class RoleException

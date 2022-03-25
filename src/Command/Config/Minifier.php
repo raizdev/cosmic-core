@@ -1,6 +1,6 @@
 <?php
 
-namespace Ares\Core\Command\Config;
+namespace Cosmic\Core\Command\Config;
 
 class Minifier
 {
@@ -53,13 +53,13 @@ class Minifier
     // JS adapter
     //--------------------------------------------------------------------
 
-    public $adapterJs =  \Ares\Core\Command\Adapters\Js\MinifyAdapter::class;
+    public $adapterJs =  \Cosmic\Core\Command\Adapters\Js\MinifyAdapter::class;
 
     //--------------------------------------------------------------------
     // CSS adapter
     //--------------------------------------------------------------------
 
-    public $adapterCss =  \Ares\Core\Command\Adapters\Css\MinifyAdapter::class;
+    public $adapterCss =  \Cosmic\Core\Command\Adapters\Css\MinifyAdapter::class;
 
     //--------------------------------------------------------------------
     // JS assets directory

@@ -1,11 +1,5 @@
 <?php
-/**
- * @copyright Copyright (c) Ares (https://www.ares.to)
- *
- * @see LICENSE (MIT)
- */
-
-namespace Ares\Core\Provider;
+namespace Cosmic\Core\Provider;
 
 use League\Container\ServiceProvider\AbstractServiceProvider;
 use SlimSession\Helper;

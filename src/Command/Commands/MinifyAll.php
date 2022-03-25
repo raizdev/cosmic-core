@@ -1,11 +1,12 @@
 <?php
 
-namespace Ares\Core\Command\Commands;
+namespace Cosmic\Core\Command\Commands;
 
-use Ares\Core\Command\Minifier;
 use Predis\Client;
 
-use Ares\Core\Command\Config\Services;
+use Cosmic\Core\Command\Config\Services;
+use Cosmic\Core\Command\Minifier;
+
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
@@ -38,7 +39,7 @@ class MinifyAll extends Command
      */
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $config = new \Ares\Core\Command\Config\Minifier();
+        $config = new \Cosmic\Core\Command\Config\Minifier();
         $minify = new Minifier($config);
         $result = $minify->deploy();
 
