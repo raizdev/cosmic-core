@@ -17,16 +17,15 @@
     "license": "MIT",
     "require":
     {
-        "matthiasmullie/minify": "dev-master",
+        "matthiasmullie/minify": "^1.3",
         "bryanjhv/slim-session": "~4.0",
-        "domexx/ares-core": "3.2.6",
         "slim/twig-view": "^3.0"
     },
     "autoload":
     {
         "psr-4":
         {
-            "Cosmic\Core\\": "src/"
+            "Cosmic\\Core\\": "src/"
         }
     },
     "scripts": {
