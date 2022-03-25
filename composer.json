@@ -1,0 +1,35 @@
+{
+    "name": "raizdev/cosmic-core",
+    "description": "Cosmic-Core designed for Ares Habbo Framework",
+    "keywords":
+    [
+        "slim4", "twig", "ares", "cosmic", "core"
+    ],
+    "homepage": "https://github.com/raizdev/cosmic-core",
+    "authors":
+    [
+        {
+            "name": "Raizer",
+            "homepage": "https://github.com/raizdev",
+            "role": "Developer"
+        }
+    ],
+    "license": "MIT",
+    "require":
+    {
+        "matthiasmullie/minify": "dev-master",
+        "bryanjhv/slim-session": "~4.0",
+        "domexx/ares-core": "3.2.6",
+        "slim/twig-view": "^3.0"
+    },
+    "autoload":
+    {
+        "psr-4":
+        {
+            "Cosmic\Core\\": "src/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+}
