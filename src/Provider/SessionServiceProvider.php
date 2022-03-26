@@ -19,7 +19,6 @@ class SessionServiceProvider extends AbstractServiceProvider
      * @var string[]
      */
     protected $provides = [
-        Helper::class,
         SessionInterface::class
     ];
 
@@ -38,10 +37,6 @@ class SessionServiceProvider extends AbstractServiceProvider
             ]);
 
             return $session;
-        });
-
-        $container->add(Helper::class, function () use ($container) {
-            return new Helper();
         });
     }
 }
