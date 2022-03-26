@@ -5,8 +5,6 @@ namespace Cosmic\Core\Provider;
 use League\Container\ServiceProvider\AbstractServiceProvider;
 use Odan\Session\PhpSession;
 use Odan\Session\SessionInterface;
-use PHLAK\Config\Config;
-use SlimSession\Helper;
 
 /**
  * Class SessionServiceProvider
