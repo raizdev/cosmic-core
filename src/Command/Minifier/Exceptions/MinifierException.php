@@ -1,6 +1,6 @@
 <?php
 
-namespace Cosmic\Core\Command\Exceptions;
+namespace Cosmic\Core\Command\Minifier\Exceptions;
 
 class MinifierException extends \RuntimeException implements ExceptionInterface
 {

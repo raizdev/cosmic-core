@@ -1,11 +1,11 @@
 <?php
 
-namespace Cosmic\Core\Command;
+namespace Cosmic\Core\Command\Minifier;
 
 use Exception;
 
-use Cosmic\Core\Command\Config\Minifier as Config;
-use Cosmic\Core\Command\Exceptions\MinifierException;
+use Cosmic\Core\Command\Minifier\Config\Minifier as Config;
+use Cosmic\Core\Command\Minifier\Exceptions\MinifierException;
 
 class Minifier
 {

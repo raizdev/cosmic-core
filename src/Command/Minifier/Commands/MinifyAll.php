@@ -1,11 +1,8 @@
 <?php
 
-namespace Cosmic\Core\Command\Commands;
+namespace Cosmic\Core\Command\Minifier\Commands;
 
-use Predis\Client;
-
-use Cosmic\Core\Command\Config\Services;
-use Cosmic\Core\Command\Minifier;
+use Cosmic\Core\Command\Minifier\Minifier;
 
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
@@ -39,7 +36,7 @@ class MinifyAll extends Command
      */
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $config = new \Cosmic\Core\Command\Config\Minifier();
+        $config = new \Cosmic\Core\Command\Minifier\Config\Minifier();
         $minify = new Minifier($config);
         $result = $minify->deploy();
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace Cosmic\Core\Command\Adapters\Js;
+namespace Cosmic\Core\Command\Minifier\Adapters\Js;
 
-use Cosmic\Core\Command\Adapters\AdapterInterface;
+use Cosmic\Core\Command\Minifier\Adapters\AdapterInterface;
 
 class MinifyAdapter implements AdapterInterface
 {
