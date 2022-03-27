@@ -1,6 +1,6 @@
 <?php
 
-namespace Cosmic\Core\Command\Config;
+namespace Cosmic\Core\Command\Minifier\Config;
 
 class Minifier
 {

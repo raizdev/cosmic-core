@@ -1,17 +1,17 @@
 <?php
 
-namespace Cosmic\Core\Command\Commands;
+namespace Cosmic\Core\Command\Minifier\Commands;
 
-use Cosmic\Core\Command\Minifier;
+use Cosmic\Core\Command\Minifier\Minifier;
 
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
-class MinifyJs extends Command
+class MinifyAll extends Command
 {
     /** @var string */
-    private const COMMAND_NAME = 'minify:js';
+    private const COMMAND_NAME = 'minify:all';
 
     /** @var string */
     private const TMP_PATH = 'tmp';
@@ -25,7 +25,7 @@ class MinifyJs extends Command
     protected function configure()
     {
         $this->setName(self::COMMAND_NAME);
-        $this->setDescription('Minify all JS files');
+        $this->setDescription('Minify JS and CSS files');
     }
 
     /**
@@ -36,17 +36,16 @@ class MinifyJs extends Command
      */
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $config = new \Cosmic\Core\Command\Config\Minifier();
+        $config = new \Cosmic\Core\Command\Minifier\Config\Minifier();
         $minify = new Minifier($config);
-        $result = $minify->deploy('js');
+        $result = $minify->deploy();
 
         if (!$result) {
             $output->writeln('<error>' . $minify->getError() . '</error>');
             return 1;
         }
-        $output->writeln('<info>JS files were successfully generated</info>');
+        $output->writeln('<info>All files were successfully generated</info>');
 
         return 0;
     }
-
 }

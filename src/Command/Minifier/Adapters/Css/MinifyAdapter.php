@@ -1,8 +1,8 @@
 <?php
 
-namespace Cosmic\Core\Command\Adapters\Js;
+namespace Cosmic\Core\Command\Minifier\Adapters\Css;
 
-use Cosmic\Core\Command\Adapters\AdapterInterface;
+use Cosmic\Core\Command\Minifier\Adapters\AdapterInterface;
 
 class MinifyAdapter implements AdapterInterface
 {
@@ -18,7 +18,7 @@ class MinifyAdapter implements AdapterInterface
      */
     public function __construct()
     {
-        $this->adapter = new \MatthiasMullie\Minify\JS();
+        $this->adapter = new \MatthiasMullie\Minify\CSS();
     }
 
     /**
