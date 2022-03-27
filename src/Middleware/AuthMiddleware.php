@@ -1,16 +1,17 @@
 <?php
 namespace Cosmic\Core\Middleware;
 
-use Odan\Session\SessionInterface;
-use Psr\Http\Message\ResponseFactoryInterface;
+use Ares\Framework\Exception\NoSuchEntityException;
+use Cosmic\Core\Exception\CoreException;
+use Ares\User\Repository\UserRepository;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Server\MiddlewareInterface;
 use Psr\Http\Server\RequestHandlerInterface;
-use Slim\Routing\RouteContext;
+use SlimSession\Helper as SessionHelper;
 
 /**
- * Class AuthMiddleware
+ * Class RolePermissionMiddleware
  *
  * @package Cosmic\Core\Middleware
  */
@@ -19,12 +20,11 @@ class AuthMiddleware implements MiddlewareInterface
     /**
      * RolePermissionMiddleware constructor.
      *
-     * @param ResponseFactoryInterface $responseFactory
-     * @param SessionInterface $session
+     * @param SessionHelper $sessionHelper
      */
     public function __construct(
-        private ResponseFactoryInterface $responseFactory,
-        private SessionInterface $session
+        private UserRepository $userRepository,
+        private SessionHelper $sessionHelper
     ) {}
 
     /**
@@ -32,21 +32,17 @@ class AuthMiddleware implements MiddlewareInterface
      * @param RequestHandlerInterface $handler
      *
      * @return ResponseInterface
+     * @throws CoreException|NoSuchEntityException
      */
     public function process(
         ServerRequestInterface $request,
         RequestHandlerInterface $handler
     ): ResponseInterface {
 
-        if($this->session->get('token')) {
-           return $handler->handle($request);
+        if($this->sessionHelper->get('user')) {
+            $user = $this->userRepository->get($this->sessionHelper->get('user', 'user_id'), 'id', true);
         }
 
-        $routeParser = RouteContext::fromRequest($request)->getRouteParser();
-
-        return $this->responseFactory->createResponse()
-            ->withStatus(302)
-            ->withHeader('Location', $routeParser->urlFor('login'));
-
+        return $handler->handle($request);
     }
 }

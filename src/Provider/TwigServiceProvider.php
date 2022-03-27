@@ -42,13 +42,14 @@ class TwigServiceProvider extends AbstractServiceProvider
             $twig = Twig::create(src_dir() . '/',
                 ['cache' => ($_ENV['CACHE_ENABLED'] === false) ? cache_dir() . '/twig' : false]);
 
+            $schwanz = $app->getRouteCollector()->getRouteParser();
+
             $twig->addRuntimeLoader(
                 new TwigRuntimeLoader(
                     $app->getRouteCollector()->getRouteParser(),
                     (new \Slim\Psr7\Factory\UriFactory)->createFromGlobals($_SERVER)
                 )
             );
-
             $this->registerGlobals($twig->getEnvironment());
             $this->registerFunctions($twig->getEnvironment());
 
