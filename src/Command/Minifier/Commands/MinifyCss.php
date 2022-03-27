@@ -36,7 +36,7 @@ class MinifyCss extends Command
      */
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $config = new \Cosmic\Core\Command\Minifier\Config\Minifier();
+        $config = new Ares\Config\Commands\Minifier();
         $minify = new Minifier($config);
         $result = $minify->deploy('css');
 
