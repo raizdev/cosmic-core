@@ -17,8 +17,6 @@ use PHLAK\Config\Config;
  */
 class TwigServiceProvider extends AbstractServiceProvider
 {
-
-
     /**
      * The class that needs to be Provided
      *
@@ -50,6 +48,7 @@ class TwigServiceProvider extends AbstractServiceProvider
                     (new \Slim\Psr7\Factory\UriFactory)->createFromGlobals($_SERVER)
                 )
             );
+
             $this->registerGlobals($twig->getEnvironment());
             $this->registerFunctions($twig->getEnvironment());
 
