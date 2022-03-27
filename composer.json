@@ -23,7 +23,8 @@
         "slim/csrf": "^1.2",
         "symfony/yaml": "^5.4",
         "spatie/array-to-xml": "^2.16",
-        "juliangut/mapping": "^1.1"
+        "juliangut/mapping": "^1.1",
+        "doctrine/annotations": "^1.13"
     },
     "autoload":
     {
