@@ -36,7 +36,7 @@ class MinifyAll extends Command
      */
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $config = new Ares\Config\Commands\Minifier();
+        $config = new \Ares\Config\Commands\Minifier();
         $minify = new Minifier($config);
         $result = $minify->deploy();
 
