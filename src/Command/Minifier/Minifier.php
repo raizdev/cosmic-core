@@ -2,7 +2,7 @@
 
 namespace Cosmic\Core\Command\Minifier;
 
-use Cosmic\Core\Command\Minifier\Config\Minifier as Config;
+use Ares\Config\Commands\Minifier as Config;
 use Cosmic\Core\Command\Minifier\Exceptions\MinifierException;
 use Exception;
 
