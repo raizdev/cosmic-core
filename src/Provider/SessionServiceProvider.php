@@ -37,6 +37,7 @@ class SessionServiceProvider extends AbstractServiceProvider
                 'cache_expire' => $_ENV['SESSION_CACHE_EXPIRE'],
             ]);
 
+            $session->start();
             return $session;
         });
 

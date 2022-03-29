@@ -40,7 +40,6 @@ class ClaimMiddleware implements MiddlewareInterface
     ): ResponseInterface {
 
         $authorization = explode(' ', (string) $this->session->get('token'));
-        $type          = $authorization[0] ?? '';
         $credentials   = $authorization[1] ?? '';
         $secret        = $_ENV['TOKEN_SECRET'];
 
