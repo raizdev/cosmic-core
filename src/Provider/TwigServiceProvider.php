@@ -1,7 +1,9 @@
 <?php
+
 namespace Cosmic\Core\Provider;
 
 use League\Container\ServiceProvider\AbstractServiceProvider;
+use Odan\Session\SessionInterface;
 use Slim\App;
 use Slim\Views\Twig;
 use Slim\Views\TwigRuntimeLoader;
@@ -42,8 +44,6 @@ class TwigServiceProvider extends AbstractServiceProvider
             $twig = Twig::create(src_dir() . '/',
                 ['cache' => ($_ENV['CACHE_ENABLED'] === false) ? cache_dir() . '/twig' : false]);
 
-            $schwanz = $app->getRouteCollector()->getRouteParser();
-
             $twig->addRuntimeLoader(
                 new TwigRuntimeLoader(
                     $app->getRouteCollector()->getRouteParser(),
@@ -58,7 +58,7 @@ class TwigServiceProvider extends AbstractServiceProvider
     }
 
     /**
-     * @param $string, $placeholders
+     * @param $string , $placeholders
      * @return string
      */
     public function getLanguage($string, $placeholders = []): string
@@ -98,12 +98,17 @@ class TwigServiceProvider extends AbstractServiceProvider
      */
     private function registerGlobals(Environment $twig)
     {
+        $container = $this->getContainer();
+
+        /** @var SessionInterface $session */
+        $session = $container->get(SessionInterface::class);
+
         $twig->addGlobal(
             'ajaxRequest', isset($_SERVER['HTTP_X_REQUESTED_WITH']) && $_SERVER['HTTP_X_REQUESTED_WITH'] === 'XMLHttpRequest'
         );
 
         $twig->addGlobal(
-            'user', 'pass user session into it'
+            'user', $session->get('user') ?? "User Session"
         );
     }
 }
