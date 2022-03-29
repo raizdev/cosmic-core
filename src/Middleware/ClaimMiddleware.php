@@ -16,7 +16,7 @@ use ReallySimpleJWT\Token;
  *
  * @package Cosmic\Core\Middleware
  */
-class AuthMiddleware implements MiddlewareInterface
+class ClaimMiddleware implements MiddlewareInterface
 {
     /**
      * RolePermissionMiddleware constructor.
