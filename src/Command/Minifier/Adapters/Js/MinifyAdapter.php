@@ -1,6 +1,6 @@
 <?php
 
-namespace hahaha;
+namespace Cosmic\Core\Command\Minifier\Adapters\Js;
 
 use Cosmic\Core\Command\Minifier\Adapters\AdapterInterface;
 
