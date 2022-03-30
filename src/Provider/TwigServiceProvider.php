@@ -108,7 +108,7 @@ class TwigServiceProvider extends AbstractServiceProvider
         );
 
         $twig->addGlobal(
-            'user', $session->get('user') ?? "User Session"
+            'user', $session->get('user')
         );
     }
 }
