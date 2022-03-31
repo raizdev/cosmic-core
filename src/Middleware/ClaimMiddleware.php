@@ -40,7 +40,7 @@ class ClaimMiddleware implements MiddlewareInterface
     ): ResponseInterface {
 
         $authorization = explode(' ', (string) $this->session->get('token'));
-        $credentials   = $authorization[1] ?? '';
+        $credentials   = $authorization[0] ?? '';
         $secret        = $_ENV['TOKEN_SECRET'];
 
         if ($this->session->has('token') && Token::validate($credentials, $secret)) {
@@ -50,6 +50,7 @@ class ClaimMiddleware implements MiddlewareInterface
 
             // Append the user id as request attribute
             $request = $request->withAttribute('cosmic_uid', Token::getPayload($credentials, $secret)['uid']);
+            $this->session->set('user', user($request));
         }
 
         return $handler->handle($request);
