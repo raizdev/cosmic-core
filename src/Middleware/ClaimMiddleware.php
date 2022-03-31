@@ -50,6 +50,7 @@ class ClaimMiddleware implements MiddlewareInterface
 
             // Append the user id as request attribute
             $request = $request->withAttribute('cosmic_uid', Token::getPayload($credentials, $secret)['uid']);
+            $this->session->set('user', user($request));
         }
 
         return $handler->handle($request);
