@@ -1,7 +1,7 @@
 <?php
 namespace Cosmic\Core\Exception;
 
-use Cosmic\Framework\Exception\BaseException;
+use Ares\Framework\Exception\BaseException;
 
 /**
  * Class RoleException

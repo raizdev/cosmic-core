@@ -9,7 +9,7 @@ use Doctrine\Common\Annotations\AnnotationReader;
 use Jgut\Mapping\Driver\AbstractAnnotationDriver;
 use Jgut\Mapping\Driver\DriverFactoryInterface;
 use League\Container\ServiceProvider\AbstractServiceProvider;
-use PHLAK\Config\Config;
+use Cosmic\Core\Config;
 use Slim\App;
 
 /**

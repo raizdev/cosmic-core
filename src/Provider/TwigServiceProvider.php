@@ -10,7 +10,7 @@ use Slim\Views\TwigRuntimeLoader;
 use Twig\Environment;
 use Twig\Error\LoaderError;
 use Twig\TwigFunction;
-use PHLAK\Config\Config;
+use Cosmic\Core\Config;
 
 /**
  * Class TwigServiceProvider
@@ -108,7 +108,7 @@ class TwigServiceProvider extends AbstractServiceProvider
         );
 
         $twig->addGlobal(
-            'user', $session->get('user') ?? "User Session"
+            'user', $session->get('user')
         );
     }
 }
