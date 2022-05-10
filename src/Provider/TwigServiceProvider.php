@@ -68,9 +68,9 @@ class TwigServiceProvider extends AbstractServiceProvider
 
     /**
      * @param $string
-     * @return string
+     * @return string|array
      */
-    public function getConfig($string): string
+    public function getConfig($string): string | array
     {
         $container = $this->getContainer();
         $config = $container->get(Config::class);
