@@ -4,6 +4,7 @@ namespace Cosmic\Core\Provider;
 
 use League\Container\ServiceProvider\AbstractServiceProvider;
 use Odan\Session\SessionInterface;
+use Cosmic\Core\Extension\DateExtension;
 use Slim\App;
 use Slim\Views\Twig;
 use Slim\Views\TwigRuntimeLoader;
@@ -50,6 +51,9 @@ class TwigServiceProvider extends AbstractServiceProvider
                     (new \Slim\Psr7\Factory\UriFactory)->createFromGlobals($_SERVER)
                 )
             );
+
+            $twig->addExtension(new DateExtension());
+
             $this->registerGlobals($twig->getEnvironment());
             $this->registerFunctions($twig->getEnvironment());
 
@@ -68,9 +72,9 @@ class TwigServiceProvider extends AbstractServiceProvider
 
     /**
      * @param $string
-     * @return string|array
+     * @return string
      */
-    public function getConfig($string): string | array
+    public function getConfig($string): string | null
     {
         $container = $this->getContainer();
         $config = $container->get(Config::class);
