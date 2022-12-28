@@ -1,9 +1,9 @@
 <?php
 
-namespace Cosmic\Core\Command\Minifier\Exceptions;
+namespace Orion\Core\Command\Minifier\Exceptions;
 
 /**
- * @package Cosmic-Core\Commands\Minifier\Exceptions
+ * @package Orion-Core\Commands\Minifier\Exceptions
  */
 interface ExceptionInterface
 {

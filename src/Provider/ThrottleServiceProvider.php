@@ -1,16 +1,15 @@
 <?php
+namespace Orion\Framework\Provider;
 
-namespace Cosmic\Core\Provider;
-
-use Ares\Framework\Middleware\ThrottleMiddleware;
-use Cosmic\Core\Config;
+use Orion\Framework\Middleware\ThrottleMiddleware;
 use League\Container\ServiceProvider\AbstractServiceProvider;
+use Orion\Framework\Config;
 use Predis\Client;
 
 /**
  * Class ThrottleServiceProvider
  *
- * @package Cosmic\Core\Provider
+ * @package Orion\Framework\Provider
  */
 class ThrottleServiceProvider extends AbstractServiceProvider
 {

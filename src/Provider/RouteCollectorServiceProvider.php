@@ -1,17 +1,13 @@
 <?php
-/**
- * @copyright Copyright (c) Ares (https://www.ares.to)
- *
- * @see LICENSE (MIT)
- */
+namespace Ares\Framework\Provider;
 
-namespace Cosmic\Core\Provider;
-
-use Cosmic\Core\Response\Handler\JsonResponseHandler;
-use Cosmic\Core\Response\Handler\XmlResponseHandler;
-use Cosmic\Core\Response\PayloadResponse;
-use Cosmic\Core\RouteCollector;
-use Cosmic\Core\Strategy\RequestHandler;
+use Orion\Framework\Response\Handler\JsonResponseHandler;
+use Orion\Framework\Response\Handler\XmlResponseHandler;
+use Orion\Framework\Response\PayloadResponse;
+use Orion\Framework\RouteCollector;
+use Orion\Framework\Strategy\RequestHandler;
+use Phpfastcache\Helper\Psr16Adapter;
+use Phpfastcache\Helper\Psr16Adapter as FastCache;
 use League\Container\ServiceProvider\AbstractServiceProvider;
 use Slim\App;
 use Slim\Interfaces\RouteCollectorInterface;
@@ -19,7 +15,7 @@ use Slim\Interfaces\RouteCollectorInterface;
 /**
  * Class RouteCollectorServiceProvider
  *
- * @package Cosmic\Core\Provider
+ * @package Orion\Framework\Provider
  */
 class RouteCollectorServiceProvider extends AbstractServiceProvider
 {
@@ -41,6 +37,9 @@ class RouteCollectorServiceProvider extends AbstractServiceProvider
             /** @var App $app */
             $app = $container->get(App::class);
 
+            /** @var Psr16Adapter $cache */
+            $cache = $container->get(FastCache::class);
+
             /** @var RouteCollector $routeCollector */
             $routeCollector = $app->getRouteCollector();
 
@@ -57,6 +56,8 @@ class RouteCollectorServiceProvider extends AbstractServiceProvider
 
             $routeCollector->setDefaultInvocationStrategy($invocationStrategy);
             $routeCollector->registerRoutes();
+            $routeCollector->setCache($cache);
+            $routeCollector->setCachePrefix("ARES_ROUTE_COLLECTOR");
 
             return $routeCollector;
         });

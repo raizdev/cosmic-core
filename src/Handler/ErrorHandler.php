@@ -1,24 +1,16 @@
 <?php
-/**
- * @copyright Copyright (c) Ares (https://www.ares.to)
- *
- * @see LICENSE (MIT)
- */
-
-namespace Cosmic\Core\Handler;
+namespace Orion\Framework\Handler;
 
 use Ares\Framework\Exception\BaseException;
 use Ares\Framework\Interfaces\CustomResponseCodeInterface;
 use Ares\Framework\Interfaces\CustomResponseInterface;
 use Ares\Framework\Interfaces\HttpResponseCodeInterface;
 use Ares\Framework\Model\CustomResponse as CustomResponse;
-
 use Psr\Http\Message\ResponseFactoryInterface;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Log\LoggerInterface;
 use Slim\Interfaces\ErrorHandlerInterface;
-
 use Throwable;
 
 /**
@@ -36,9 +28,9 @@ class ErrorHandler implements ErrorHandlerInterface
      * @param LoggerInterface          $logger
      */
     public function __construct(
-        private ResponseFactoryInterface $responseFactory,
+        private readonly ResponseFactoryInterface $responseFactory,
         private CustomResponse $customResponse,
-        private LoggerInterface $logger
+        private readonly LoggerInterface $logger
     ) {}
 
     /**
@@ -107,11 +99,7 @@ class ErrorHandler implements ErrorHandlerInterface
     private function withStatus(ResponseInterface $response, Throwable|BaseException $exception): ResponseInterface
     {
         try {
-            if ($_ENV['API_DEBUG'] == 'development') {
-                return $response->withStatus($exception->getCode());
-            } else {
-                return $response->withStatus(HttpResponseCodeInterface::HTTP_RESPONSE_OK);
-            }
+            return $response->withStatus($exception->getCode());
         } catch (\Exception) {
             return $response->withStatus(HttpResponseCodeInterface::HTTP_RESPONSE_INTERNAL_SERVER_ERROR);
         }
@@ -125,7 +113,7 @@ class ErrorHandler implements ErrorHandlerInterface
     private function addErrors(CustomResponseInterface $customResponse, Throwable $exception): CustomResponseInterface
     {
         if (!$exception instanceof BaseException) {
-
+            $this->addTrace($customResponse, $exception);
             return $customResponse->addError([
                 'message' => $exception->getMessage()
             ]);
@@ -134,6 +122,7 @@ class ErrorHandler implements ErrorHandlerInterface
         $errors = $exception->getErrors();
 
         if (!$errors) {
+            $this->addTrace($customResponse, $exception);
             return $customResponse->addError([
                 'message' => $exception->getMessage()
             ]);
@@ -144,5 +133,20 @@ class ErrorHandler implements ErrorHandlerInterface
         }
 
         return $customResponse;
+    }
+
+    /**
+     * Adds Trace of Error if API is in development mode
+     *
+     * @param CustomResponseInterface $customResponse
+     * @param Throwable               $exception
+     */
+    private function addTrace(CustomResponseInterface $customResponse, Throwable $exception): void
+    {
+        if ($_ENV['API_DEBUG'] === 'development') {
+            $customResponse->addError([
+                'trace' => $exception->getTraceAsString()
+            ]);
+        }
     }
 }

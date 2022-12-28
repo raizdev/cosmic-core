@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Cosmic\Core\Mapping\Metadata;
+namespace Orion\Framework\Mapping\Metadata;
 
 use Jgut\Mapping\Exception\MetadataException;
 use Jgut\Mapping\Metadata\MetadataInterface;

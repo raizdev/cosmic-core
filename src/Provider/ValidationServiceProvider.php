@@ -1,15 +1,14 @@
 <?php
+namespace Orion\Framework\Provider;
 
-namespace Cosmic\Core\Provider;
-
-use Cosmic\Core\Config;
 use League\Container\ServiceProvider\AbstractServiceProvider;
+use Orion\Framework\Config;
 use Rakit\Validation\Validator;
 
 /**
  * Class ValidationServiceProvider
  *
- * @package Cosmic\Core\Provider
+ * @package Orion\Framework\Provider
  */
 class ValidationServiceProvider extends AbstractServiceProvider
 {

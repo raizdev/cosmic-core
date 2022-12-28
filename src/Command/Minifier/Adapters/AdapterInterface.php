@@ -1,6 +1,6 @@
 <?php
 
-namespace Cosmic\Core\Command\Minifier\Adapters;
+namespace Orion\Core\Command\Minifier\Adapters;
 
 interface AdapterInterface
 {

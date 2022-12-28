@@ -1,10 +1,10 @@
 <?php declare(strict_types=1);
 
-namespace Cosmic\Core\Mapping\Driver;
+namespace Orion\Framework\Mapping\Driver;
 
 use Jgut\Mapping\Exception\DriverException;
-use Cosmic\Core\Mapping\Metadata\GroupMetadata;
-use Cosmic\Core\Mapping\Metadata\RouteMetadata;
+use Orion\Framework\Mapping\Metadata\GroupMetadata;
+use Orion\Framework\Mapping\Metadata\RouteMetadata;
 
 trait MappingTrait
 {

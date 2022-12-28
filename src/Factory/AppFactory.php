@@ -1,9 +1,8 @@
 <?php declare(strict_types=1);
+namespace Orion\Framework\Factory;
 
-namespace Cosmic\Core\Factory;
-
-use Cosmic\Core\RouteCollector;
-use Cosmic\Core\Configuration;
+use Orion\Framework\RouteCollector;
+use Orion\Framework\Configuration;
 use Psr\Container\ContainerInterface;
 use Psr\Http\Message\ResponseFactoryInterface;
 use Slim\App;
@@ -22,7 +21,7 @@ class AppFactory extends SlimAppFactory
     /**
      * @var Configuration
      */
-    protected static $configuration;
+    protected static Configuration $configuration;
 
     /**
      * {@inheritdoc}

@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Cosmic\Core\Mapping\Annotation;
+namespace Orion\Framework\Mapping\Annotation;
 
 use Jgut\Mapping\Annotation\AbstractAnnotation;
 

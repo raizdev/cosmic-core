@@ -1,8 +1,8 @@
 <?php
 
-namespace Cosmic\Core\Loader;
+namespace Orion\Framework\Loader;
 
-use Cosmic\Core\Interfaces\Loadable;
+use Orion\Framework\Interfaces\Loadable;
 
 abstract class Loader implements Loadable
 {

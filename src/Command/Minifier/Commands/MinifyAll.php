@@ -1,8 +1,8 @@
 <?php
 
-namespace Cosmic\Core\Command\Minifier\Commands;
+namespace Orion\Core\Command\Minifier\Commands;
 
-use Cosmic\Core\Command\Minifier\Minifier;
+use Orion\Core\Command\Minifier\Minifier;
 
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;

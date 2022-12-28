@@ -1,9 +1,9 @@
 <?php
 
-namespace Cosmic\Core\Command\Minifier;
+namespace Orion\Core\Command\Minifier;
 
-use Ares\Config\Commands\Minifier as Config;
-use Cosmic\Core\Command\Minifier\Exceptions\MinifierException;
+use Orion\Config\Commands\Minifier as Config;
+use Orion\Core\Command\Minifier\Exceptions\MinifierException;
 use Exception;
 
 class Minifier

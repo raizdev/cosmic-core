@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Cosmic\Core\Naming;
+namespace Orion\Framework\Naming;
 
 /**
  * Snake case route naming strategy.

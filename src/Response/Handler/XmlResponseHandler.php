@@ -1,9 +1,8 @@
 <?php declare(strict_types=1);
+namespace Orion\Framework\Response\Handler;
 
-namespace Cosmic\Core\Response\Handler;
-
-use Cosmic\Core\Response\PayloadResponse;
-use Cosmic\Core\Response\ResponseType;
+use Orion\Framework\Response\PayloadResponse;
+use Orion\Framework\Response\ResponseType;
 use Psr\Http\Message\ResponseFactoryInterface;
 use Psr\Http\Message\ResponseInterface;
 use Spatie\ArrayToXml\ArrayToXml;
@@ -18,7 +17,7 @@ class XmlResponseHandler extends AbstractResponseHandler
      *
      * @var bool
      */
-    protected $prettify;
+    protected bool $prettify;
 
     /**
      * JsonResponseTypeHandler constructor.

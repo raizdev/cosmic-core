@@ -1,10 +1,10 @@
 <?php declare(strict_types=1);
 
-namespace Cosmic\Core\Route;
+namespace Ares\Framework\Route;
 
-use Cosmic\Core\Configuration;
-use Cosmic\Core\Mapping\Metadata\GroupMetadata;
-use Cosmic\Core\Mapping\Metadata\RouteMetadata;
+use Orion\Framework\Configuration;
+use Orion\Framework\Mapping\Metadata\GroupMetadata;
+use Orion\Framework\Mapping\Metadata\RouteMetadata;
 
 /**
  * Route resolver.

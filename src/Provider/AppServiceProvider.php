@@ -1,21 +1,16 @@
 <?php
+namespace Orion\Framework\Provider;
 
-namespace Cosmic\Core\Provider;
-
-use Cosmic\Core\Configuration;
-use Cosmic\Core\Factory\AppFactory;
-use Cosmic\Core\Mapping\Driver\AnnotationDriver;
-use Doctrine\Common\Annotations\AnnotationReader;
-use Jgut\Mapping\Driver\AbstractAnnotationDriver;
+use Orion\Framework\Configuration;
+use Orion\Framework\Factory\AppFactory;
 use Jgut\Mapping\Driver\DriverFactoryInterface;
 use League\Container\ServiceProvider\AbstractServiceProvider;
-use Cosmic\Core\Config;
 use Slim\App;
 
 /**
  * Class AppServiceProvider
  *
- * @package Cosmic\Core\Provider
+ * @package Orion\Framework\Provider
  */
 class AppServiceProvider extends AbstractServiceProvider
 {
@@ -34,20 +29,10 @@ class AppServiceProvider extends AbstractServiceProvider
         $container = $this->getContainer();
 
         $container->share(App::class, function () use ($container) {
-            /** @var Config $config */
-            $config = $container->get(Config::class);
-
-            $sourceArray = [];
-            $sources = $config->get('route_settings.resolvers');
-
-            foreach($sources as $source) {
-                $sourceArray[] = src_dir() . "/" . $source;
-            }
-
             $configuration = new Configuration([
                 'sources' => [
                     [
-                        "path" => $sourceArray,
+                        "path" => src_dir(),
                         "type" => DriverFactoryInterface::DRIVER_ANNOTATION
                     ],
                 ],

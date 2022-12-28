@@ -1,6 +1,6 @@
 <?php
 
-namespace Cosmic\Core\Trait;
+namespace Orion\Framework\Trait;
 
 use ArrayIterator;
 use Traversable;

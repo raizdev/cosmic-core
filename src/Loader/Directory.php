@@ -1,9 +1,9 @@
 <?php
 
-namespace Cosmic\Core\Loader;
+namespace Orion\Framework\Loader;
 
 use DirectoryIterator;
-use Cosmic\Core\Exception\InvalidFileException;
+use Orion\Framework\Exception\InvalidFileException;
 
 class Directory extends Loader
 {
@@ -12,7 +12,7 @@ class Directory extends Loader
      * and convert them to an array of configuration options. Any invalid files
      * will be silently ignored.
      *
-     * @throws \Cosmic\Core\Exception\InvalidFileException
+     * @throws \Orion\Framework\Exception\InvalidFileException
      *
      * @return array Array of configuration options
      */
@@ -26,7 +26,7 @@ class Directory extends Loader
             }
 
             $className = $file->isDir() ? 'Directory' : ucfirst(strtolower($file->getExtension()));
-            $classPath = 'PHLAK\\Config\\Loaders\\' . $className;
+            $classPath = 'Ares\\Framework\\Loader\\' . $className;
 
             $loader = new $classPath($file->getPathname());
 

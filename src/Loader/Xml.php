@@ -1,8 +1,8 @@
 <?php
 
-namespace Cosmic\Core\Loader;
+namespace Orion\Framework\Loader;
 
-use Cosmic\Core\Exception\InvalidFileException;
+use Orion\Framework\Exception\InvalidFileException;
 
 class Xml extends Loader
 {
@@ -10,7 +10,7 @@ class Xml extends Loader
      * Retrieve the contents of a .json file and convert it to an array of
      * configuration options.
      *
-     * @throws \Cosmic\Core\Exception\InvalidFileException
+     * @throws \Orion\Framework\Exception\InvalidFileException
      *
      * @return array Array of configuration options
      */

@@ -1,20 +1,20 @@
 <?php
 
-namespace Cosmic\Core;
+namespace Orion\Framework;
 
 use ArrayAccess;
 use DirectoryIterator;
 use IteratorAggregate;
-use Cosmic\Core\Exception\InvalidContextException;
-use Cosmic\Core\Interfaces\ConfigInterface;
-use Cosmic\Core\Trait\Arrayable;
+use Orion\Framework\Exception\InvalidContextException;
+use Orion\Framework\Interfaces\ConfigInterface;
+use Orion\Framework\Trait\Arrayable;
 use RuntimeException;
 use SplFileInfo;
 
 /**
  * Class Config
  *
- * @package Cosmic\Core
+ * @package Orion\Framework
  * Class for providing a simple Config
  */
 class Config implements ConfigInterface, ArrayAccess, IteratorAggregate
@@ -55,7 +55,7 @@ class Config implements ConfigInterface, ArrayAccess, IteratorAggregate
      *
      * @param string $path A path to a directory of configuration files
      *
-     * @return \Cosmic\Core\Interfaces\ConfigInterface A new ConfigInterface object
+     * @return \Ares\Framework\Interfaces\ConfigInterface A new ConfigInterface object
      */
     public static function fromDirectory(string $path): ConfigInterface
     {
@@ -102,7 +102,7 @@ class Config implements ConfigInterface, ArrayAccess, IteratorAggregate
      *
      * @return mixed Stored config item or $default value
      */
-    public function get(string $key, $default = null)
+    public function get(string $key, mixed $default = null): mixed
     {
         $config = $this->config;
 
@@ -215,14 +215,14 @@ class Config implements ConfigInterface, ArrayAccess, IteratorAggregate
      * @param bool $override Whether or not to override existing options with
      *                       values from the loaded file
      *
-     * @return \Cosmic\Core\Interfaces\ConfigInterface This Config object
+     * @return \Ares\Framework\Interfaces\ConfigInterface This Config object
      */
     public function load(string $path, string $prefix = null, bool $override = true): ConfigInterface
     {
         $file = new SplFileInfo($path);
 
         $className = $file->isDir() ? 'Directory' : ucfirst(strtolower($file->getExtension()));
-        $classPath = 'PHLAK\\Config\\Loaders\\' . $className;
+        $classPath = 'Ares\\Framework\\Loader\\' . $className;
 
         $loader = new $classPath($file->getRealPath());
 
@@ -240,11 +240,11 @@ class Config implements ConfigInterface, ArrayAccess, IteratorAggregate
     /**
      * Merge another Config object into this one.
      *
-     * @param \Cosmic\Core\Interfaces\ConfigInterface $config Instance of Config
+     * @param \Ares\Framework\Interfaces\ConfigInterface $config Instance of Config
      * @param bool $override Whether or not to override existing options with
      *                       values from the merged config object
      *
-     * @return \Cosmic\Core\Interfaces\ConfigInterface This Config object
+     * @return \Ares\Framework\Interfaces\ConfigInterface This Config object
      */
     public function merge(ConfigInterface $config, bool $override = true): ConfigInterface
     {
@@ -262,7 +262,7 @@ class Config implements ConfigInterface, ArrayAccess, IteratorAggregate
      *
      * @param string $key Unique configuration option key
      *
-     * @return \Cosmic\Core\Interfaces\ConfigInterface A new ConfigInterface object
+     * @return \Ares\Framework\Interfaces\ConfigInterface A new ConfigInterface object
      */
     public function split(string $key): ConfigInterface
     {

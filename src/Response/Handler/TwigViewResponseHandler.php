@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace Cosmic\Core\Response\Handler;
+namespace Orion\Core\Response\Handler;
 
-use Cosmic\Core\Response\ResponseType;
-use Cosmic\Core\Response\ViewResponse;
+use Orion\Core\Response\ResponseType;
+use Orion\Core\Response\ViewResponse;
 use Psr\Http\Message\ResponseFactoryInterface;
 use Psr\Http\Message\ResponseInterface;
 use Slim\Views\Twig;

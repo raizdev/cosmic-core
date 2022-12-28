@@ -1,8 +1,8 @@
 <?php
 
-namespace Cosmic\Core\Loader;
+namespace Orion\Framework\Loader;
 
-use Cosmic\Core\Exception\InvalidFileException;
+use Orion\Framework\Exception\InvalidFileException;
 use Yosymfony\Toml\Exception\ParseException;
 use Yosymfony\Toml\Toml as TomlParser;
 
@@ -12,7 +12,7 @@ class Toml extends Loader
      * Retrieve the contents of a .toml file and convert it to an array of
      * configuration options.
      *
-     * @throws \Cosmic\Core\Exception\InvalidFileException
+     * @throws \Orion\Framework\Exception\InvalidFileException
      *
      * @return array Array of configuration options
      */

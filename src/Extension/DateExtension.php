@@ -1,5 +1,5 @@
 <?php
-namespace Cosmic\Core\Extension;
+namespace Orion\Core\Extension;
 
 use Symfony\Component\Translation\IdentityTranslator;
 use Symfony\Component\Translation\TranslatorInterface;

@@ -1,11 +1,15 @@
 <?php
+namespace Ares\Framework\Provider;
 
-namespace Cosmic\Core\Provider;
-
-use Cosmic\Core\Config;
+use Orion\Framework\Exception\InvalidContextException;
 use League\Container\ServiceProvider\AbstractServiceProvider;
-use Monolog\Logger;
+use Orion\Framework\Config;
 
+/**
+ * Class ConfigServiceProvider
+ *
+ * @package Ares\Framework\Provider
+ */
 class ConfigServiceProvider extends AbstractServiceProvider
 {
     /**
@@ -17,6 +21,7 @@ class ConfigServiceProvider extends AbstractServiceProvider
 
     /**
      * Registers new service.
+     * @throws InvalidContextException
      */
     public function register()
     {

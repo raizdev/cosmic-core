@@ -1,8 +1,8 @@
 <?php
 
-namespace Cosmic\Core\Command\Minifier\Adapters\Js;
+namespace Orion\Core\Command\Minifier\Adapters\Js;
 
-use Cosmic\Core\Command\Minifier\Adapters\AdapterInterface;
+use Orion\Core\Command\Minifier\Adapters\AdapterInterface;
 
 class MinifyAdapter implements AdapterInterface
 {

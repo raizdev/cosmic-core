@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace Cosmic\Core\Strategy;
+namespace Orion\Framework\Strategy;
 
-use Cosmic\Core\Response\Handler\ResponseTypeHandler;
+use Orion\Framework\Response\Handler\ResponseTypeHandler;
 use Psr\Container\ContainerInterface;
 use Psr\Http\Message\ResponseFactoryInterface;
 use Psr\Http\Message\ResponseInterface;

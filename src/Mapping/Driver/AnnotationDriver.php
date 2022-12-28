@@ -1,15 +1,15 @@
 <?php declare(strict_types=1);
 
-namespace Cosmic\Core\Mapping\Driver;
+namespace Orion\Framework\Mapping\Driver;
 
 use Jgut\Mapping\Driver\AbstractAnnotationDriver;
 use Jgut\Mapping\Exception\DriverException;
 
-use Cosmic\Core\Mapping\Annotation\Group as GroupAnnotation;
-use Cosmic\Core\Mapping\Annotation\Route as RouteAnnotation;
-use Cosmic\Core\Mapping\Annotation\Router as RouterAnnotation;
-use Cosmic\Core\Mapping\Metadata\GroupMetadata;
-use Cosmic\Core\Mapping\Metadata\RouteMetadata;
+use Orion\Framework\Mapping\Annotation\Group as GroupAnnotation;
+use Orion\Framework\Mapping\Annotation\Route as RouteAnnotation;
+use Orion\Framework\Mapping\Annotation\Router as RouterAnnotation;
+use Orion\Framework\Mapping\Metadata\GroupMetadata;
+use Orion\Framework\Mapping\Metadata\RouteMetadata;
 
 /**
  * Annotation driver.

@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Cosmic\Core\Mapping\Driver;
+namespace Orion\Framework\Mapping\Driver;
 
 use Jgut\Mapping\Driver\AbstractMappingDriver;
 use Jgut\Mapping\Driver\Traits\JsonMappingTrait;

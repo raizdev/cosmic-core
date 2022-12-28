@@ -1,9 +1,8 @@
 <?php declare(strict_types=1);
+namespace Orion\Framework\Response\Handler;
 
-namespace Cosmic\Core\Response\Handler;
-
-use Cosmic\Core\Response\PayloadResponse;
-use Cosmic\Core\Response\ResponseType;
+use Orion\Framework\Response\PayloadResponse;
+use Orion\Framework\Response\ResponseType;
 use Psr\Http\Message\ResponseFactoryInterface;
 use Psr\Http\Message\ResponseInterface;
 
@@ -17,13 +16,13 @@ class JsonResponseHandler extends AbstractResponseHandler
      *
      * @var int
      */
-    protected $jsonFlags;
+    protected int $jsonFlags;
 
     /**
      * JsonResponseHandler constructor.
      *
      * @param ResponseFactoryInterface $responseFactory
-     * @param bool                     $prettify
+     * @param bool $prettify
      */
     public function __construct(ResponseFactoryInterface $responseFactory, bool $prettify = false)
     {
@@ -67,7 +66,7 @@ class JsonResponseHandler extends AbstractResponseHandler
      *
      * @return bool
      */
-    protected function isJsonEncodable($payload): bool
+    protected function isJsonEncodable(mixed $payload): bool
     {
         if (\is_resource($payload)) {
             return false;

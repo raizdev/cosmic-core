@@ -1,11 +1,11 @@
 <?php declare(strict_types=1);
 
-namespace Cosmic\Core;
+namespace Orion\Framework;
 
 use Jgut\Mapping\Driver\DriverFactoryInterface;
-use Cosmic\Core\Mapping\Metadata\RouteMetadata;
-use Cosmic\Core\Route\Route;
-use Cosmic\Core\Route\RouteResolver;
+use Orion\Framework\Mapping\Metadata\RouteMetadata;
+use Orion\Framework\Route\Route;
+use Orion\Framework\Route\RouteResolver;
 use Psr\Container\ContainerInterface;
 use Psr\Http\Message\ResponseFactoryInterface;
 use Psr\SimpleCache\CacheInterface;

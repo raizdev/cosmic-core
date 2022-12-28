@@ -1,22 +1,21 @@
 <?php
-
-namespace Cosmic\Core\Provider;
+namespace Orion\Core\Provider;
 
 use League\Container\ServiceProvider\AbstractServiceProvider;
 use Odan\Session\SessionInterface;
-use Cosmic\Core\Extension\DateExtension;
+use Orion\Core\Extension\DateExtension;
 use Slim\App;
 use Slim\Views\Twig;
 use Slim\Views\TwigRuntimeLoader;
 use Twig\Environment;
 use Twig\Error\LoaderError;
 use Twig\TwigFunction;
-use Cosmic\Core\Config;
+use Orion\Core\Config;
 
 /**
  * Class TwigServiceProvider
  *
- * @package Cosmic\Core\Provider
+ * @package Orion\Core\Provider
  */
 class TwigServiceProvider extends AbstractServiceProvider
 {

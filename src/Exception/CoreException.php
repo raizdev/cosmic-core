@@ -1,12 +1,10 @@
 <?php
-namespace Cosmic\Core\Exception;
-
-use Ares\Framework\Exception\BaseException;
+namespace Orion\Framework\Exception;
 
 /**
- * Class RoleException
+ * Class CoreException
  *
- * @package Ares\Role\Exception
+ * @package Orion\Framework\Exception
  */
 class CoreException extends BaseException
 {

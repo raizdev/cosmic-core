@@ -1,13 +1,13 @@
 <?php declare(strict_types=1);
 
-namespace Cosmic\Core;
+namespace Orion\Framework;
 
 use Jgut\Mapping\Driver\DriverInterface;
 use Jgut\Mapping\Metadata\MetadataResolver;
-use Cosmic\Core\Mapping\Driver\DriverFactory;
-use Cosmic\Core\Naming\SnakeCase;
-use Cosmic\Core\Naming\Strategy;
-use Cosmic\Core\Route\RouteResolver;
+use Orion\Framework\Mapping\Driver\DriverFactory;
+use Orion\Framework\Naming\SnakeCase;
+use Orion\Framework\Naming\Strategy;
+use Orion\Framework\Route\RouteResolver;
 
 /**
  * Routing configuration.

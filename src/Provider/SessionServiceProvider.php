@@ -1,6 +1,5 @@
 <?php
-
-namespace Cosmic\Core\Provider;
+namespace Orion\Core\Provider;
 
 use League\Container\ServiceProvider\AbstractServiceProvider;
 use Odan\Session\PhpSession;
@@ -9,7 +8,7 @@ use Odan\Session\SessionInterface;
 /**
  * Class SessionServiceProvider
  *
- * @package Ares\Core\Provider
+ * @package Orion\Core\Provider
  */
 class SessionServiceProvider extends AbstractServiceProvider
 {

@@ -1,15 +1,14 @@
 <?php
-
-namespace Cosmic\Core\Provider;
+namespace Orion\Framework\Provider;
 
 use Cocur\Slugify\Slugify;
-use Cosmic\Core\Config;
 use League\Container\ServiceProvider\AbstractServiceProvider;
+use Orion\Framework\Config;
 
 /**
  * Class SlugServiceProvider
  *
- * @package Cosmic\Core\Provider
+ * @package Orion\Framework\Provider
  */
 class SlugServiceProvider extends AbstractServiceProvider
 {

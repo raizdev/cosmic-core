@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Cosmic\Core\Mapping\Metadata;
+namespace Orion\Framework\Mapping\Metadata;
 
 /**
  * Group metadata.
