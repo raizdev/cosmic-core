@@ -1,5 +1,5 @@
 {
-    "name": "raizdev/cosmic-core",
+    "name": "raizdev/orion-core",
     "description": "Cosmic-Core designed for Ares Habbo Framework",
     "keywords":
     [
@@ -30,7 +30,7 @@
     {
         "psr-4":
         {
-            "Cosmic\\Core\\": "src/"
+            "Orion\\Core\\": "src/"
         }
     },
     "scripts": {
