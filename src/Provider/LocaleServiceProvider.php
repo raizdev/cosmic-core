@@ -8,7 +8,7 @@ use League\Container\ServiceProvider\AbstractServiceProvider;
 /**
  * Class LocaleServiceProvider
  *
- * @package Ares\Framework\Provider
+ * @package Orion\Core\Provider
  */
 class LocaleServiceProvider extends AbstractServiceProvider
 {

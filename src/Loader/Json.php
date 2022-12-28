@@ -10,7 +10,7 @@ class Json extends Loader
      * Retrieve the contents of a .json file and convert it to an array of
      * configuration options.
      *
-     * @throws \Ares\Framework\Exception\InvalidFileException
+     * @throws \Orion\Core\Exception\InvalidFileException
      *
      * @return array Array of configuration options
      */

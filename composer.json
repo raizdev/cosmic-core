@@ -13,18 +13,32 @@
             "homepage": "https://github.com/raizdev",
             "role": "Developer"
         }
-    ],
+    ],t
     "license": "MIT",
-    "require":
+    "require":t
     {
         "matthiasmullie/minify": "^1.3",
         "slim/twig-view": "^3.0",
         "odan/session": "^5.1",
         "slim/csrf": "^1.2",
-        "symfony/yaml": "^5.4",
-        "spatie/array-to-xml": "^2.16",
-        "juliangut/mapping": "^1.1",
-        "doctrine/annotations": "^1.13"
+    "cocur/slugify": "^4.0",
+    "doctrine/annotations": "^1.13",
+    "illuminate/database": "dev-master",
+    "illuminate/pagination": "dev-master",
+    "juliangut/mapping": "^1.1",
+    "league/container": "3.3.3",
+    "monolog/monolog": "^1.24",
+    "phpfastcache/phpfastcache": "^8.0",
+    "predis/predis": "^2.0@dev",
+    "rakit/validation": "^1.4",
+    "rbdwllr/psr-jwt": "^1.0",
+    "slim/psr7": "^1.3.0",
+    "slim/slim": "^4.6.0",
+    "spatie/array-to-xml": "^3.1",
+    "statical/statical": "dev-master",
+    "symfony/console": "^6.1",
+    "tuupola/cors-middleware": "^1.2",
+    "vlucas/phpdotenv": "^5.0@dev"
     },
     "autoload":
     {

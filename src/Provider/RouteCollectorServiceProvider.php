@@ -1,5 +1,5 @@
 <?php
-namespace Ares\Framework\Provider;
+namespace Orion\Core\Provider;
 
 use Orion\Core\Response\Handler\JsonResponseHandler;
 use Orion\Core\Response\Handler\XmlResponseHandler;

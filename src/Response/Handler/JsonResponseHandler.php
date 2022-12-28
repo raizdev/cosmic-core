@@ -1,4 +1,5 @@
 <?php declare(strict_types=1);
+
 namespace Orion\Core\Response\Handler;
 
 use Orion\Core\Response\PayloadResponse;
@@ -16,13 +17,13 @@ class JsonResponseHandler extends AbstractResponseHandler
      *
      * @var int
      */
-    protected int $jsonFlags;
+    protected $jsonFlags;
 
     /**
      * JsonResponseHandler constructor.
      *
      * @param ResponseFactoryInterface $responseFactory
-     * @param bool $prettify
+     * @param bool                     $prettify
      */
     public function __construct(ResponseFactoryInterface $responseFactory, bool $prettify = false)
     {
@@ -66,7 +67,7 @@ class JsonResponseHandler extends AbstractResponseHandler
      *
      * @return bool
      */
-    protected function isJsonEncodable(mixed $payload): bool
+    protected function isJsonEncodable($payload): bool
     {
         if (\is_resource($payload)) {
             return false;

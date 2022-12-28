@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Ares\Framework\Route;
+namespace Orion\Core\Route;
 
 use Orion\Core\Configuration;
 use Orion\Core\Mapping\Metadata\GroupMetadata;

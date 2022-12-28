@@ -1,4 +1,5 @@
 <?php declare(strict_types=1);
+
 namespace Orion\Core\Response\Handler;
 
 use Orion\Core\Response\PayloadResponse;
@@ -17,7 +18,7 @@ class XmlResponseHandler extends AbstractResponseHandler
      *
      * @var bool
      */
-    protected bool $prettify;
+    protected $prettify;
 
     /**
      * JsonResponseTypeHandler constructor.

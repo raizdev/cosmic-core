@@ -12,13 +12,19 @@ use Psr\Http\Message\ResponseInterface;
 abstract class AbstractResponseHandler implements ResponseTypeHandler
 {
     /**
+     * @var ResponseFactoryInterface
+     */
+    protected $responseFactory;
+
+    /**
      * AbstractResponseHandler constructor.
      *
      * @param ResponseFactoryInterface $responseFactory
      */
-    public function __construct(
-        protected ResponseFactoryInterface $responseFactory
-    ) {}
+    public function __construct(ResponseFactoryInterface $responseFactory)
+    {
+        $this->responseFactory = $responseFactory;
+    }
 
     /**
      * Get response.

@@ -1,5 +1,5 @@
 <?php
-namespace Ares\Framework\Provider;
+namespace Orion\Core\Provider;
 
 use Orion\Core\Exception\InvalidContextException;
 use League\Container\ServiceProvider\AbstractServiceProvider;
@@ -8,7 +8,7 @@ use Orion\Core\Config;
 /**
  * Class ConfigServiceProvider
  *
- * @package Ares\Framework\Provider
+ * @package Orion\Core\Provider
  */
 class ConfigServiceProvider extends AbstractServiceProvider
 {

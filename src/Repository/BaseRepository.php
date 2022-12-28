@@ -1,5 +1,5 @@
 <?php
-namespace Ares\Framework\Repository;
+namespace Orion\Core\Repository;
 
 use Orion\Core\Exception\DataObjectManagerException;
 use Orion\Core\Exception\NoSuchEntityException;

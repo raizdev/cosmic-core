@@ -1,4 +1,5 @@
 <?php declare(strict_types=1);
+
 namespace Orion\Core\Response\Handler;
 
 use Orion\Core\Response\ResponseType;

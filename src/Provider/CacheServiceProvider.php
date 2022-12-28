@@ -9,7 +9,7 @@ use League\Container\ServiceProvider\AbstractServiceProvider;
 /**
  * Class CacheServiceProvider
  *
- * @package Ares\Framework\Provider
+ * @package Orion\Core\Provider
  */
 class CacheServiceProvider extends AbstractServiceProvider
 {

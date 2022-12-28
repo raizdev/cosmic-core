@@ -1,4 +1,5 @@
 <?php declare(strict_types=1);
+
 namespace Orion\Core\Factory;
 
 use Orion\Core\RouteCollector;
@@ -21,7 +22,7 @@ class AppFactory extends SlimAppFactory
     /**
      * @var Configuration
      */
-    protected static Configuration $configuration;
+    protected static $configuration;
 
     /**
      * {@inheritdoc}

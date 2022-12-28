@@ -1,11 +1,7 @@
 <?php
+
 namespace Orion\Core\Interfaces;
 
-/**
- * Interface Loadable
- *
- * @package Orion\Core\Interfaces
- */
 interface Loadable
 {
     /**
@@ -14,5 +10,5 @@ interface Loadable
      *
      * @return array Array of configuration options
      */
-    public function getArray(): array;
+    public function getArray();
 }

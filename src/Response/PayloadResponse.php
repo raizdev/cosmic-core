@@ -1,5 +1,6 @@
 <?php declare(strict_types=1);
-namespace AreOrions\Framework\Response;
+
+namespace Orion\Core\Response;
 
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
@@ -10,6 +11,13 @@ use Psr\Http\Message\ServerRequestInterface;
 class PayloadResponse extends AbstractResponse
 {
     /**
+     * Payload.
+     *
+     * @var array
+     */
+    protected $payload;
+
+    /**
      * PayloadResponseType constructor.
      *
      * @param mixed                  $payload
@@ -17,11 +25,13 @@ class PayloadResponse extends AbstractResponse
      * @param ResponseInterface|null $response
      */
     public function __construct(
-        protected mixed $payload,
+        mixed $payload,
         ServerRequestInterface $request,
         ?ResponseInterface $response = null
     ) {
         parent::__construct($request, $response);
+
+        $this->payload = $payload;
     }
 
     /**

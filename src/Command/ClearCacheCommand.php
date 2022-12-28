@@ -9,7 +9,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 /**
  * Class ClearCacheCommand
  *
- * @package Ares\Framework\Command
+ * @package Orion\Core\Command
  */
 class ClearCacheCommand extends Command
 {
