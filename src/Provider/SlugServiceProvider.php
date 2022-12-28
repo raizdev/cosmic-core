@@ -1,14 +1,14 @@
 <?php
-namespace Orion\Framework\Provider;
+namespace Orion\Core\Provider;
 
 use Cocur\Slugify\Slugify;
 use League\Container\ServiceProvider\AbstractServiceProvider;
-use Orion\Framework\Config;
+use Orion\Core\Config;
 
 /**
  * Class SlugServiceProvider
  *
- * @package Orion\Framework\Provider
+ * @package Orion\Core\Provider
  */
 class SlugServiceProvider extends AbstractServiceProvider
 {

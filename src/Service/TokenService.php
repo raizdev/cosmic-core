@@ -1,5 +1,5 @@
 <?php declare(strict_types=1);
-namespace Orion\Framework\Service;
+namespace Orion\Core\Service;
 
 use ReallySimpleJWT\Exception\ValidateException;
 use ReallySimpleJWT\Token;

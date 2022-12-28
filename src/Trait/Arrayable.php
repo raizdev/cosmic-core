@@ -1,6 +1,6 @@
 <?php
 
-namespace Orion\Framework\Trait;
+namespace Orion\Core\Trait;
 
 use ArrayIterator;
 use Traversable;

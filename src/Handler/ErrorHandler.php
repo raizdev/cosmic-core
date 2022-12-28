@@ -1,5 +1,5 @@
 <?php
-namespace Orion\Framework\Handler;
+namespace Orion\Core\Handler;
 
 use Ares\Framework\Exception\BaseException;
 use Ares\Framework\Interfaces\CustomResponseCodeInterface;

@@ -1,7 +1,7 @@
 <?php
-namespace Orion\Framework\Middleware;
+namespace Orion\Core\Middleware;
 
-use Orion\Framework\Model\Locale;
+use Orion\Core\Model\Locale;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Server\MiddlewareInterface;
@@ -10,7 +10,7 @@ use Psr\Http\Server\RequestHandlerInterface;
 /**
  * Class LocaleMiddleware
  *
- * @package Orion\Framework\Middleware
+ * @package Orion\Core\Middleware
  */
 class LocaleMiddleware implements MiddlewareInterface
 {

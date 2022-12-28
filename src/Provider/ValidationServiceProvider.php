@@ -1,14 +1,14 @@
 <?php
-namespace Orion\Framework\Provider;
+namespace Orion\Core\Provider;
 
 use League\Container\ServiceProvider\AbstractServiceProvider;
-use Orion\Framework\Config;
+use Orion\Core\Config;
 use Rakit\Validation\Validator;
 
 /**
  * Class ValidationServiceProvider
  *
- * @package Orion\Framework\Provider
+ * @package Orion\Core\Provider
  */
 class ValidationServiceProvider extends AbstractServiceProvider
 {

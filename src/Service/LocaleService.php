@@ -1,12 +1,12 @@
 <?php
-namespace Orion\Framework\Service;
+namespace Orion\Core\Service;
 
-use Orion\Framework\Model\Locale;
+use Orion\Core\Model\Locale;
 
 /**
  * Class LocaleService
  *
- * @package Orion\Framework\Service
+ * @package Orion\Core\Service
  */
 class LocaleService
 {

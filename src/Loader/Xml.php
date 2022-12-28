@@ -1,8 +1,8 @@
 <?php
 
-namespace Orion\Framework\Loader;
+namespace Orion\Core\Loader;
 
-use Orion\Framework\Exception\InvalidFileException;
+use Orion\Core\Exception\InvalidFileException;
 
 class Xml extends Loader
 {
@@ -10,7 +10,7 @@ class Xml extends Loader
      * Retrieve the contents of a .json file and convert it to an array of
      * configuration options.
      *
-     * @throws \Orion\Framework\Exception\InvalidFileException
+     * @throws \Orion\Core\Exception\InvalidFileException
      *
      * @return array Array of configuration options
      */

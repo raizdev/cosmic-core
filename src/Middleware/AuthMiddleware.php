@@ -1,9 +1,9 @@
 <?php
-namespace Orion\Framework\Middleware;
+namespace Orion\Core\Middleware;
 
-use Orion\Framework\Exception\AuthenticationException;
-use Orion\Framework\Interfaces\CustomResponseCodeInterface;
-use Orion\Framework\Interfaces\HttpResponseCodeInterface;
+use Orion\Core\Exception\AuthenticationException;
+use Orion\Core\Interfaces\CustomResponseCodeInterface;
+use Orion\Core\Interfaces\HttpResponseCodeInterface;
 use Psr\Http\Message\ResponseFactoryInterface;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
@@ -14,7 +14,7 @@ use ReallySimpleJWT\Token;
 /**
  * JWT Auth middleware.
  *
- * @package Orion\Framework\Middleware
+ * @package Orion\Core\Middleware
  */
 class AuthMiddleware implements MiddlewareInterface
 {

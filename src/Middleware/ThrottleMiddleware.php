@@ -1,9 +1,9 @@
 <?php
-namespace Orion\Framework\Middleware;
+namespace Orion\Core\Middleware;
 
-use Orion\Framework\Exception\ThrottleException;
-use Orion\Framework\Interfaces\CustomResponseCodeInterface;
-use Orion\Framework\Interfaces\HttpResponseCodeInterface;
+use Orion\Core\Exception\ThrottleException;
+use Orion\Core\Interfaces\CustomResponseCodeInterface;
+use Orion\Core\Interfaces\HttpResponseCodeInterface;
 use Predis\Client as Predis;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
@@ -13,7 +13,7 @@ use Psr\Http\Server\RequestHandlerInterface;
 /**
  * Class ThrottleMiddleware
  *
- * @package Orion\Framework\Middleware
+ * @package Orion\Core\Middleware
  */
 class ThrottleMiddleware implements MiddlewareInterface
 {

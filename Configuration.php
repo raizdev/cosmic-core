@@ -1,13 +1,13 @@
 <?php declare(strict_types=1);
 
-namespace Orion\Framework;
+namespace Orion\Core;
 
 use Jgut\Mapping\Driver\DriverInterface;
 use Jgut\Mapping\Metadata\MetadataResolver;
-use Orion\Framework\Mapping\Driver\DriverFactory;
-use Orion\Framework\Naming\SnakeCase;
-use Orion\Framework\Naming\Strategy;
-use Orion\Framework\Route\RouteResolver;
+use Orion\Core\Mapping\Driver\DriverFactory;
+use Orion\Core\Naming\SnakeCase;
+use Orion\Core\Naming\Strategy;
+use Orion\Core\Route\RouteResolver;
 
 /**
  * Routing configuration.

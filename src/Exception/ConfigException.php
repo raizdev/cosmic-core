@@ -1,13 +1,13 @@
 <?php
 
-namespace Orion\Framework\Exception;
+namespace Orion\Core\Exception;
 
 use Exception;
 
 /**
  * Class ConfigException
  *
- * @package Orion\Framework\Exception
+ * @package Orion\Core\Exception
  */
 abstract class ConfigException extends Exception
 {

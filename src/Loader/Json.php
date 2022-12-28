@@ -1,8 +1,8 @@
 <?php
 
-namespace Orion\Framework\Loader;
+namespace Orion\Core\Loader;
 
-use Orion\Framework\Exception\InvalidFileException;
+use Orion\Core\Exception\InvalidFileException;
 
 class Json extends Loader
 {

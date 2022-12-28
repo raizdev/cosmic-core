@@ -1,5 +1,5 @@
 <?php
-namespace Orion\Framework\Service;
+namespace Orion\Core\Service;
 
 use DateInterval;
 use DateTime;
@@ -12,7 +12,7 @@ use Psr\Log\LoggerInterface;
 /**
  * Class CacheService
  *
- * @package Orion\Framework\Service
+ * @package Orion\Core\Service
  */
 class CacheService
 {

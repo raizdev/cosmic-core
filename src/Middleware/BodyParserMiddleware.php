@@ -1,5 +1,5 @@
 <?php
-namespace Orion\Framework\Middleware;
+namespace Orion\Core\Middleware;
 
 use Psr\Http\Message\ResponseInterface as Response;
 use Psr\Http\Message\ServerRequestInterface as Request;
@@ -9,7 +9,7 @@ use Psr\Http\Server\RequestHandlerInterface as RequestHandler;
 /**
  * Class BodyParserMiddleware
  *
- * @package Orion\Framework\Middleware
+ * @package Orion\Core\Middleware
  */
 class BodyParserMiddleware implements MiddlewareInterface
 {

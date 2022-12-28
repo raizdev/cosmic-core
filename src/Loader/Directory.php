@@ -1,9 +1,9 @@
 <?php
 
-namespace Orion\Framework\Loader;
+namespace Orion\Core\Loader;
 
 use DirectoryIterator;
-use Orion\Framework\Exception\InvalidFileException;
+use Orion\Core\Exception\InvalidFileException;
 
 class Directory extends Loader
 {
@@ -12,7 +12,7 @@ class Directory extends Loader
      * and convert them to an array of configuration options. Any invalid files
      * will be silently ignored.
      *
-     * @throws \Orion\Framework\Exception\InvalidFileException
+     * @throws \Orion\Core\Exception\InvalidFileException
      *
      * @return array Array of configuration options
      */

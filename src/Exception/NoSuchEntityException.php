@@ -1,10 +1,10 @@
 <?php
-namespace Orion\Framework\Exception;
+namespace Orion\Core\Exception;
 
 /**
  * Class NoSuchEntityException
  *
- * @package Orion\Framework\Exception
+ * @package Orion\Core\Exception
  */
 class NoSuchEntityException extends BaseException
 {

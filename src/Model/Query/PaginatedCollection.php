@@ -1,12 +1,12 @@
 <?php
-namespace Orion\Framework\Model\Query;
+namespace Orion\Core\Model\Query;
 
 use Illuminate\Pagination\LengthAwarePaginator as IlluminatePaginator;
 
 /**
  * Class PaginatedCollection
  *
- * @package Orion\Framework\Model\Query
+ * @package Orion\Core\Model\Query
  */
 class PaginatedCollection extends IlluminatePaginator
 {

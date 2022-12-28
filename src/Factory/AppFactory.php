@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
-namespace Orion\Framework\Factory;
+namespace Orion\Core\Factory;
 
-use Orion\Framework\RouteCollector;
-use Orion\Framework\Configuration;
+use Orion\Core\RouteCollector;
+use Orion\Core\Configuration;
 use Psr\Container\ContainerInterface;
 use Psr\Http\Message\ResponseFactoryInterface;
 use Slim\App;

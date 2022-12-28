@@ -1,5 +1,5 @@
 <?php
-namespace Orion\Framework\Provider;
+namespace Orion\Core\Provider;
 
 use Phpfastcache\Config\ConfigurationOption;
 use Phpfastcache\Drivers\Predis\Config as PredisConfig;

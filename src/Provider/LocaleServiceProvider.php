@@ -1,8 +1,8 @@
 <?php
-namespace Orion\Framework\Provider;
+namespace Orion\Core\Provider;
 
-use Orion\Framework\Helper\LocaleHelper;
-use Orion\Framework\Model\Locale;
+use Orion\Core\Helper\LocaleHelper;
+use Orion\Core\Model\Locale;
 use League\Container\ServiceProvider\AbstractServiceProvider;
 
 /**

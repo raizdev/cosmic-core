@@ -1,15 +1,15 @@
 <?php
-namespace Orion\Framework\Provider;
+namespace Orion\Core\Provider;
 
-use Orion\Framework\Middleware\ThrottleMiddleware;
+use Orion\Core\Middleware\ThrottleMiddleware;
 use League\Container\ServiceProvider\AbstractServiceProvider;
-use Orion\Framework\Config;
+use Orion\Core\Config;
 use Predis\Client;
 
 /**
  * Class ThrottleServiceProvider
  *
- * @package Orion\Framework\Provider
+ * @package Orion\Core\Provider
  */
 class ThrottleServiceProvider extends AbstractServiceProvider
 {

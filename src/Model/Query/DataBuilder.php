@@ -1,5 +1,5 @@
 <?php
-namespace Orion\Framework\Model\Query;
+namespace Orion\Core\Model\Query;
 
 use Illuminate\Container\Container;
 use Illuminate\Contracts\Container\BindingResolutionException;
@@ -11,7 +11,7 @@ use Illuminate\Pagination\Paginator;
 /**
  * Class Builder
  *
- * @package Orion\Framework\Model\Query
+ * @package Orion\Core\Model\Query
  */
 class DataBuilder extends Builder
 {

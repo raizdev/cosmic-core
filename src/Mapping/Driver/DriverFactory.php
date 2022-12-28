@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Orion\Framework\Mapping\Driver;
+namespace Orion\Core\Mapping\Driver;
 
 use Doctrine\Common\Annotations\AnnotationReader;
 use Jgut\Mapping\Driver\AbstractDriverFactory;

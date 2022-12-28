@@ -1,11 +1,11 @@
 <?php
 
-namespace Orion\Framework\Exception;
+namespace Orion\Core\Exception;
 
 /**
  * Class InvalidFileException
  *
- * @package Orion\Framework\Exception
+ * @package Orion\Core\Exception
  */
 class InvalidFileException extends ConfigException
 {

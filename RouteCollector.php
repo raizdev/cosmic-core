@@ -1,11 +1,11 @@
 <?php declare(strict_types=1);
 
-namespace Orion\Framework;
+namespace Orion\Core;
 
 use Jgut\Mapping\Driver\DriverFactoryInterface;
-use Orion\Framework\Mapping\Metadata\RouteMetadata;
-use Orion\Framework\Route\Route;
-use Orion\Framework\Route\RouteResolver;
+use Orion\Core\Mapping\Metadata\RouteMetadata;
+use Orion\Core\Route\Route;
+use Orion\Core\Route\RouteResolver;
 use Psr\Container\ContainerInterface;
 use Psr\Http\Message\ResponseFactoryInterface;
 use Psr\SimpleCache\CacheInterface;

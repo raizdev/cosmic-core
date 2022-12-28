@@ -1,8 +1,8 @@
 <?php
-namespace Orion\Framework\Model;
+namespace Orion\Core\Model;
 
-use Orion\Framework\Interfaces\CustomResponseInterface;
-use Orion\Framework\Interfaces\HttpResponseCodeInterface;
+use Orion\Core\Interfaces\CustomResponseInterface;
+use Orion\Core\Interfaces\HttpResponseCodeInterface;
 
 /**
  * Class Response

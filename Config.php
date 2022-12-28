@@ -1,20 +1,20 @@
 <?php
 
-namespace Orion\Framework;
+namespace Orion\Core;
 
 use ArrayAccess;
 use DirectoryIterator;
 use IteratorAggregate;
-use Orion\Framework\Exception\InvalidContextException;
-use Orion\Framework\Interfaces\ConfigInterface;
-use Orion\Framework\Trait\Arrayable;
+use Orion\Core\Exception\InvalidContextException;
+use Orion\Core\Interfaces\ConfigInterface;
+use Orion\Core\Trait\Arrayable;
 use RuntimeException;
 use SplFileInfo;
 
 /**
  * Class Config
  *
- * @package Orion\Framework
+ * @package Orion\Core
  * Class for providing a simple Config
  */
 class Config implements ConfigInterface, ArrayAccess, IteratorAggregate

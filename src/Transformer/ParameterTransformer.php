@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Orion\Framework\Transformer;
+namespace Orion\Core\Transformer;
 
 /**
  * Parameter transformer interface.

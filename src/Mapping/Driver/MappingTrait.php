@@ -1,10 +1,10 @@
 <?php declare(strict_types=1);
 
-namespace Orion\Framework\Mapping\Driver;
+namespace Orion\Core\Mapping\Driver;
 
 use Jgut\Mapping\Exception\DriverException;
-use Orion\Framework\Mapping\Metadata\GroupMetadata;
-use Orion\Framework\Mapping\Metadata\RouteMetadata;
+use Orion\Core\Mapping\Metadata\GroupMetadata;
+use Orion\Core\Mapping\Metadata\RouteMetadata;
 
 trait MappingTrait
 {

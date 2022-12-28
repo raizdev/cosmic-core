@@ -1,12 +1,12 @@
 <?php
-namespace Orion\Framework\Model;
+namespace Orion\Core\Model;
 
 use JsonSerializable;
 
 /**
  * Class DataObject
  *
- * @package Orion\Framework\Model
+ * @package Orion\Core\Model
  */
 class DataObject implements JsonSerializable
 {

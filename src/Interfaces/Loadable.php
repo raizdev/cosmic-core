@@ -1,10 +1,10 @@
 <?php
-namespace Orion\Framework\Interfaces;
+namespace Orion\Core\Interfaces;
 
 /**
  * Interface Loadable
  *
- * @package Orion\Framework\Interfaces
+ * @package Orion\Core\Interfaces
  */
 interface Loadable
 {

@@ -1,13 +1,13 @@
 <?php declare(strict_types=1);
-namespace Orion\Framework\Service;
+namespace Orion\Core\Service;
 
-use Orion\Framework\Exception\ValidationException;
+use Orion\Core\Exception\ValidationException;
 use Rakit\Validation\Validator;
 
 /**
  * Class ValidatorService
  *
- * @package Orion\Framework\Service
+ * @package Orion\Core\Service
  */
 class ValidationService
 {

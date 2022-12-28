@@ -1,14 +1,14 @@
 <?php
-namespace Orion\Framework\Model\Query;
+namespace Orion\Core\Model\Query;
 
-use Orion\Framework\Exception\DataObjectManagerException;
-use Orion\Framework\Model\DataObject;
+use Orion\Core\Exception\DataObjectManagerException;
+use Orion\Core\Model\DataObject;
 use ReflectionClass;
 
 /**
  * Class DataObjectManager
  *
- * @package Orion\Framework\Model\Query
+ * @package Orion\Core\Model\Query
  */
 class DataObjectManager extends DataBuilder
 {

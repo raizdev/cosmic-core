@@ -1,13 +1,13 @@
 <?php declare(strict_types=1);
-namespace Orion\Framework\Controller;
+namespace Orion\Core\Controller;
 
-use Orion\Framework\Interfaces\CustomResponseInterface;
+use Orion\Core\Interfaces\CustomResponseInterface;
 use Psr\Http\Message\ResponseInterface as Response;
 
 /**
  * Class BaseController
  *
- * @package Orion\Framework\Controller
+ * @package Orion\Core\Controller
  */
 abstract class BaseController
 {

@@ -1,12 +1,12 @@
 <?php
-namespace Orion\Framework\Model\Query;
+namespace Orion\Core\Model\Query;
 
 use Illuminate\Support\Collection as IlluminateCollection;
 
 /**
  * Class Collection
  *
- * @package Orion\Framework\Model\Query
+ * @package Orion\Core\Model\Query
  */
 class Collection extends IlluminateCollection
 {

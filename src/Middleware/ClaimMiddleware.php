@@ -1,5 +1,5 @@
 <?php
-namespace Orion\Framework\Middleware;
+namespace Orion\Core\Middleware;
 
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
@@ -10,7 +10,7 @@ use ReallySimpleJWT\Token;
 /**
  * ClaimMiddleware.
  *
- * @package Orion\Framework\Middleware
+ * @package Orion\Core\Middleware
  */
 class ClaimMiddleware implements MiddlewareInterface
 {

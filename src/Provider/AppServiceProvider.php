@@ -1,8 +1,8 @@
 <?php
-namespace Orion\Framework\Provider;
+namespace Orion\Core\Provider;
 
-use Orion\Framework\Configuration;
-use Orion\Framework\Factory\AppFactory;
+use Orion\Core\Configuration;
+use Orion\Core\Factory\AppFactory;
 use Jgut\Mapping\Driver\DriverFactoryInterface;
 use League\Container\ServiceProvider\AbstractServiceProvider;
 use Slim\App;
@@ -10,7 +10,7 @@ use Slim\App;
 /**
  * Class AppServiceProvider
  *
- * @package Orion\Framework\Provider
+ * @package Orion\Core\Provider
  */
 class AppServiceProvider extends AbstractServiceProvider
 {

@@ -1,12 +1,12 @@
 <?php declare(strict_types=1);
-namespace Orion\Framework\Exception;
+namespace Orion\Core\Exception;
 
 use Throwable;
 
 /**
  * Class BaseException
  *
- * @package Orion\Framework\Exception
+ * @package Orion\Core\Exception
  */
 abstract class BaseException extends \Exception
 {

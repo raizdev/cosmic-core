@@ -1,5 +1,5 @@
 <?php
-namespace Orion\Framework\Command;
+namespace Orion\Core\Command;
 
 use Predis\Client;
 use Symfony\Component\Console\Command\Command;

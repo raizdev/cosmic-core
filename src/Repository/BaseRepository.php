@@ -1,20 +1,20 @@
 <?php
 namespace Ares\Framework\Repository;
 
-use Orion\Framework\Exception\DataObjectManagerException;
-use Orion\Framework\Exception\NoSuchEntityException;
-use Orion\Framework\Factory\DataObjectManagerFactory;
-use Orion\Framework\Model\DataObject;
-use Orion\Framework\Model\Query\DataObjectManager;
-use Orion\Framework\Model\Query\PaginatedCollection;
-use Orion\Framework\Service\CacheService;
-use Orion\Framework\Model\Query\Collection;
+use Orion\Core\Exception\DataObjectManagerException;
+use Orion\Core\Exception\NoSuchEntityException;
+use Orion\Core\Factory\DataObjectManagerFactory;
+use Orion\Core\Model\DataObject;
+use Orion\Core\Model\Query\DataObjectManager;
+use Orion\Core\Model\Query\PaginatedCollection;
+use Orion\Core\Service\CacheService;
+use Orion\Core\Model\Query\Collection;
 use Illuminate\Contracts\Container\BindingResolutionException;
 
 /**
  * Class BaseRepository
  *
- * @package Orion\Framework\Repository
+ * @package Orion\Core\Repository
  */
 abstract class BaseRepository
 {

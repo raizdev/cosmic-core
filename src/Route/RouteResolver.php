@@ -2,9 +2,9 @@
 
 namespace Ares\Framework\Route;
 
-use Orion\Framework\Configuration;
-use Orion\Framework\Mapping\Metadata\GroupMetadata;
-use Orion\Framework\Mapping\Metadata\RouteMetadata;
+use Orion\Core\Configuration;
+use Orion\Core\Mapping\Metadata\GroupMetadata;
+use Orion\Core\Mapping\Metadata\RouteMetadata;
 
 /**
  * Route resolver.

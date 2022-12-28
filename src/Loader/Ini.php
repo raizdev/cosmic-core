@@ -1,8 +1,8 @@
 <?php
 
-namespace Orion\Framework\Loader;
+namespace Orion\Core\Loader;
 
-use Orion\Framework\Exception\InvalidFileException;
+use Orion\Core\Exception\InvalidFileException;
 
 class Ini extends Loader
 {
@@ -10,7 +10,7 @@ class Ini extends Loader
      * Retrieve the contents of a .ini file and convert it to an array of
      * configuration options.
      *
-     * @throws \Orion\Framework\Exception\InvalidFileException
+     * @throws \Orion\Core\Exception\InvalidFileException
      *
      * @return array Array of configuration options
      */

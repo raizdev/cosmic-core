@@ -1,10 +1,10 @@
 <?php
-namespace Orion\Framework\Helper;
+namespace Orion\Core\Helper;
 
 /**
  * Class LocaleHelper
  *
- * @package Orion\Framework\Helper
+ * @package Orion\Core\Helper
  */
 class LocaleHelper
 {

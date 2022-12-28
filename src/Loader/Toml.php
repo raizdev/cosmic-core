@@ -1,8 +1,8 @@
 <?php
 
-namespace Orion\Framework\Loader;
+namespace Orion\Core\Loader;
 
-use Orion\Framework\Exception\InvalidFileException;
+use Orion\Core\Exception\InvalidFileException;
 use Yosymfony\Toml\Exception\ParseException;
 use Yosymfony\Toml\Toml as TomlParser;
 
@@ -12,7 +12,7 @@ class Toml extends Loader
      * Retrieve the contents of a .toml file and convert it to an array of
      * configuration options.
      *
-     * @throws \Orion\Framework\Exception\InvalidFileException
+     * @throws \Orion\Core\Exception\InvalidFileException
      *
      * @return array Array of configuration options
      */

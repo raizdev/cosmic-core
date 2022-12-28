@@ -1,5 +1,5 @@
 <?php
-namespace Orion\Framework\Provider;
+namespace Orion\Core\Provider;
 
 use League\Container\ServiceProvider\AbstractServiceProvider;
 use Monolog\Handler\StreamHandler;
@@ -10,7 +10,7 @@ use Psr\Log\LoggerInterface;
 /**
  * Class LoggingServiceProvider
  *
- * @package Orion\Framework\Provider
+ * @package Orion\Core\Provider
  */
 class LoggingServiceProvider extends AbstractServiceProvider
 {

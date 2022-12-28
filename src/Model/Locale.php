@@ -1,12 +1,12 @@
 <?php
-namespace Orion\Framework\Model;
+namespace Orion\Core\Model;
 
-use Orion\Framework\Helper\LocaleHelper;
+use Orion\Core\Helper\LocaleHelper;
 
 /**
  * Class Locale
  *
- * @package Orion\Framework\Model
+ * @package Orion\Core\Model
  */
 class Locale
 {

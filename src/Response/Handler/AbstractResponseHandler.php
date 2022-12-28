@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace Orion\Framework\Response\Handler;
+namespace Orion\Core\Response\Handler;
 
-use Orion\Framework\Response\ResponseType;
+use Orion\Core\Response\ResponseType;
 use Psr\Http\Message\ResponseFactoryInterface;
 use Psr\Http\Message\ResponseInterface;
 

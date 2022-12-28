@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Orion\Framework\Naming;
+namespace Orion\Core\Naming;
 
 /**
  * Camel case route naming strategy.

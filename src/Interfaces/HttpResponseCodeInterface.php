@@ -1,11 +1,11 @@
 <?php
 
-namespace Orion\Framework\Interfaces;
+namespace Orion\Core\Interfaces;
 
 /**
  * Interface HttpResponseCodeInterface
  *
- * @package Orion\Framework\Interfaces
+ * @package Orion\Core\Interfaces
  */
 interface HttpResponseCodeInterface
 {

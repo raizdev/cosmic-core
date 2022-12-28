@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Orion\Framework\Mapping\Metadata;
+namespace Orion\Core\Mapping\Metadata;
 
 use Jgut\Mapping\Exception\MetadataException;
 

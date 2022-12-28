@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Orion\Framework\Mapping\Annotation;
+namespace Orion\Core\Mapping\Annotation;
 
 use Jgut\Mapping\Annotation\AbstractAnnotation;
 use Jgut\Mapping\Exception\AnnotationException;

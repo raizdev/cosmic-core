@@ -1,5 +1,5 @@
 <?php
-namespace Orion\Framework\Provider;
+namespace Orion\Core\Provider;
 
 use League\Container\ServiceProvider\AbstractServiceProvider;
 use Psr\Http\Message\ResponseFactoryInterface;
@@ -8,7 +8,7 @@ use Slim\App;
 /**
  * Class RouteServiceProvider
  *
- * @package Orion\Framework\Provider
+ * @package Orion\Core\Provider
  */
 class RouteServiceProvider extends AbstractServiceProvider
 {

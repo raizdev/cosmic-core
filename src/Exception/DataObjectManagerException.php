@@ -1,10 +1,10 @@
 <?php
-namespace Orion\Framework\Exception;
+namespace Orion\Core\Exception;
 
 /**
  * Class DataObjectManagerException
  *
- * @package Orion\Framework\Exception
+ * @package Orion\Core\Exception
  */
 class DataObjectManagerException extends BaseException
 {

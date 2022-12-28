@@ -1,8 +1,8 @@
 <?php
 
-namespace Orion\Framework\Loader;
+namespace Orion\Core\Loader;
 
-use Orion\Framework\Interfaces\Loadable;
+use Orion\Core\Interfaces\Loadable;
 
 abstract class Loader implements Loadable
 {

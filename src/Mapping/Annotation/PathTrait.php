@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Orion\Framework\Mapping\Annotation;
+namespace Orion\Core\Mapping\Annotation;
 
 /**
  * Path annotation trait.

@@ -1,8 +1,8 @@
 <?php
 
-namespace Orion\Framework\Loader;
+namespace Orion\Core\Loader;
 
-use Orion\Framework\Exception\InvalidFileException;
+use Orion\Core\Exception\InvalidFileException;
 use Symfony\Component\Yaml\Exception\ParseException;
 use Symfony\Component\Yaml\Yaml as YamlParser;
 
@@ -12,7 +12,7 @@ class Yaml extends Loader
      * Retrieve the contents of a .yaml file and convert it to an array of
      * configuration options.
      *
-     * @throws \Orion\Framework\Exception\InvalidFileException
+     * @throws \Orion\Core\Exception\InvalidFileException
      *
      * @return array Array of configuration options
      */

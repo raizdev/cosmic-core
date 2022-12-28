@@ -1,13 +1,13 @@
 <?php
-namespace Orion\Framework\Factory;
+namespace Orion\Core\Factory;
 
-use Orion\Framework\Model\Query\DataObjectManager;
+use Orion\Core\Model\Query\DataObjectManager;
 use Illuminate\Database\Capsule\Manager;
 
 /**
  * Class DataObjectManagerFactory
  *
- * @package Orion\Framework\Factory
+ * @package Orion\Core\Factory
  */
 class DataObjectManagerFactory
 {
